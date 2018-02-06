@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D6E67CD8826EB40CB32175F /* libPods-GxShareProj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2732435BC28CC249A44DC468 /* libPods-GxShareProj.a */; };
+		CBBCF1992028836600A13EDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBCF1982028836600A13EDB /* AppDelegate.m */; };
+		CBBCF19C2028836600A13EDB /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBCF19B2028836600A13EDB /* FirstViewController.m */; };
+		CBBCF19F2028836600A13EDB /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBCF19E2028836600A13EDB /* SecondViewController.m */; };
+		CBBCF1A22028836600A13EDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBBCF1A02028836600A13EDB /* Main.storyboard */; };
+		CBBCF1A42028836600A13EDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBBCF1A32028836600A13EDB /* Assets.xcassets */; };
+		CBBCF1A72028836600A13EDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBBCF1A52028836600A13EDB /* LaunchScreen.storyboard */; };
+		CBBCF1AA2028836600A13EDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBCF1A92028836600A13EDB /* main.m */; };
+		CBBCF1B42028836600A13EDB /* GxShareProjTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBCF1B32028836600A13EDB /* GxShareProjTests.m */; };
+		CBBCF1BF2028836600A13EDB /* GxShareProjUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBCF1BE2028836600A13EDB /* GxShareProjUITests.m */; };
+		CBBCF1D12028917E00A13EDB /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBCF1D02028917E00A13EDB /* SettingViewController.m */; };
+		CBBCF1E12028A16D00A13EDB /* MacroMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBCF1D92028A16D00A13EDB /* MacroMethod.m */; };
+		CBBCF1E22028A16D00A13EDB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBCF1DC2028A16D00A13EDB /* BaseViewController.m */; };
+		CBBCF1E72029D6D200A13EDB /* ShareLoadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBCF1E62029D6D200A13EDB /* ShareLoadVC.m */; };
+		CBBCF1EA2029E07500A13EDB /* DirectoryWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBCF1E92029E07500A13EDB /* DirectoryWatcher.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBBCF1B02028836600A13EDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBBCF18C2028836600A13EDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBBCF1932028836600A13EDB;
+			remoteInfo = GxShareProj;
+		};
+		CBBCF1BB2028836600A13EDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBBCF18C2028836600A13EDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBBCF1932028836600A13EDB;
+			remoteInfo = GxShareProj;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2732435BC28CC249A44DC468 /* libPods-GxShareProj.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GxShareProj.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B961333418B6952104D2D8F /* Pods-GxShareProj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GxShareProj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GxShareProj/Pods-GxShareProj.debug.xcconfig"; sourceTree = "<group>"; };
+		CBBCF1942028836600A13EDB /* GxShareProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GxShareProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBBCF1972028836600A13EDB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CBBCF1982028836600A13EDB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CBBCF19A2028836600A13EDB /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		CBBCF19B2028836600A13EDB /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		CBBCF19D2028836600A13EDB /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		CBBCF19E2028836600A13EDB /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		CBBCF1A12028836600A13EDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBBCF1A32028836600A13EDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBBCF1A62028836600A13EDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBBCF1A82028836600A13EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBBCF1A92028836600A13EDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CBBCF1AF2028836600A13EDB /* GxShareProjTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GxShareProjTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBBCF1B32028836600A13EDB /* GxShareProjTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GxShareProjTests.m; sourceTree = "<group>"; };
+		CBBCF1B52028836600A13EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBBCF1BA2028836600A13EDB /* GxShareProjUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GxShareProjUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBBCF1BE2028836600A13EDB /* GxShareProjUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GxShareProjUITests.m; sourceTree = "<group>"; };
+		CBBCF1C02028836600A13EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBBCF1CF2028917E00A13EDB /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		CBBCF1D02028917E00A13EDB /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		CBBCF1D520289BF100A13EDB /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		CBBCF1D92028A16D00A13EDB /* MacroMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacroMethod.m; sourceTree = "<group>"; };
+		CBBCF1DA2028A16D00A13EDB /* MacroMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroMethod.h; sourceTree = "<group>"; };
+		CBBCF1DC2028A16D00A13EDB /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		CBBCF1DD2028A16D00A13EDB /* BaseDefine.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDefine.pch; sourceTree = "<group>"; };
+		CBBCF1DE2028A16D00A13EDB /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		CBBCF1E42029D5F900A13EDB /* GxShareProj.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GxShareProj.entitlements; sourceTree = "<group>"; };
+		CBBCF1E52029D6D200A13EDB /* ShareLoadVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareLoadVC.h; sourceTree = "<group>"; };
+		CBBCF1E62029D6D200A13EDB /* ShareLoadVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareLoadVC.m; sourceTree = "<group>"; };
+		CBBCF1E82029E07500A13EDB /* DirectoryWatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DirectoryWatcher.h; sourceTree = "<group>"; };
+		CBBCF1E92029E07500A13EDB /* DirectoryWatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DirectoryWatcher.m; sourceTree = "<group>"; };
+		D366F06392B4E02DEF86C0B5 /* Pods-GxShareProj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GxShareProj.release.xcconfig"; path = "Pods/Target Support Files/Pods-GxShareProj/Pods-GxShareProj.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBBCF1912028836600A13EDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D6E67CD8826EB40CB32175F /* libPods-GxShareProj.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBBCF1AC2028836600A13EDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBBCF1B72028836600A13EDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98706DF43628BE7B80382949 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2732435BC28CC249A44DC468 /* libPods-GxShareProj.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBBCF18B2028836600A13EDB = {
+			isa = PBXGroup;
+			children = (
+				CBBCF1962028836600A13EDB /* GxShareProj */,
+				CBBCF1B22028836600A13EDB /* GxShareProjTests */,
+				CBBCF1BD2028836600A13EDB /* GxShareProjUITests */,
+				CBBCF1952028836600A13EDB /* Products */,
+				F83BFF8B2195955B36052C85 /* Pods */,
+				98706DF43628BE7B80382949 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CBBCF1952028836600A13EDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBBCF1942028836600A13EDB /* GxShareProj.app */,
+				CBBCF1AF2028836600A13EDB /* GxShareProjTests.xctest */,
+				CBBCF1BA2028836600A13EDB /* GxShareProjUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBBCF1962028836600A13EDB /* GxShareProj */ = {
+			isa = PBXGroup;
+			children = (
+				CBBCF1E42029D5F900A13EDB /* GxShareProj.entitlements */,
+				CBBCF1E32028A19900A13EDB /* Support Files */,
+				CBBCF1DB2028A16D00A13EDB /* Base */,
+				CBBCF1D72028A16C00A13EDB /* First */,
+				CBBCF1D82028A16D00A13EDB /* Method */,
+				CBBCF1DF2028A16D00A13EDB /* Second */,
+				CBBCF1E02028A16D00A13EDB /* Setting */,
+				CBBCF1972028836600A13EDB /* AppDelegate.h */,
+				CBBCF1982028836600A13EDB /* AppDelegate.m */,
+				CBBCF19A2028836600A13EDB /* FirstViewController.h */,
+				CBBCF19B2028836600A13EDB /* FirstViewController.m */,
+				CBBCF19D2028836600A13EDB /* SecondViewController.h */,
+				CBBCF19E2028836600A13EDB /* SecondViewController.m */,
+				CBBCF1CF2028917E00A13EDB /* SettingViewController.h */,
+				CBBCF1D02028917E00A13EDB /* SettingViewController.m */,
+				CBBCF1A32028836600A13EDB /* Assets.xcassets */,
+				CBBCF1E52029D6D200A13EDB /* ShareLoadVC.h */,
+				CBBCF1E62029D6D200A13EDB /* ShareLoadVC.m */,
+				CBBCF1E82029E07500A13EDB /* DirectoryWatcher.h */,
+				CBBCF1E92029E07500A13EDB /* DirectoryWatcher.m */,
+			);
+			path = GxShareProj;
+			sourceTree = "<group>";
+		};
+		CBBCF1B22028836600A13EDB /* GxShareProjTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBBCF1B32028836600A13EDB /* GxShareProjTests.m */,
+				CBBCF1B52028836600A13EDB /* Info.plist */,
+			);
+			path = GxShareProjTests;
+			sourceTree = "<group>";
+		};
+		CBBCF1BD2028836600A13EDB /* GxShareProjUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CBBCF1BE2028836600A13EDB /* GxShareProjUITests.m */,
+				CBBCF1C02028836600A13EDB /* Info.plist */,
+			);
+			path = GxShareProjUITests;
+			sourceTree = "<group>";
+		};
+		CBBCF1D72028A16C00A13EDB /* First */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		CBBCF1D82028A16D00A13EDB /* Method */ = {
+			isa = PBXGroup;
+			children = (
+				CBBCF1DA2028A16D00A13EDB /* MacroMethod.h */,
+				CBBCF1D92028A16D00A13EDB /* MacroMethod.m */,
+			);
+			path = Method;
+			sourceTree = "<group>";
+		};
+		CBBCF1DB2028A16D00A13EDB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CBBCF1DE2028A16D00A13EDB /* BaseViewController.h */,
+				CBBCF1DC2028A16D00A13EDB /* BaseViewController.m */,
+				CBBCF1DD2028A16D00A13EDB /* BaseDefine.pch */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CBBCF1DF2028A16D00A13EDB /* Second */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+		CBBCF1E02028A16D00A13EDB /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		CBBCF1E32028A19900A13EDB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBBCF1D520289BF100A13EDB /* Prefix.pch */,
+				CBBCF1A52028836600A13EDB /* LaunchScreen.storyboard */,
+				CBBCF1A82028836600A13EDB /* Info.plist */,
+				CBBCF1A92028836600A13EDB /* main.m */,
+				CBBCF1A02028836600A13EDB /* Main.storyboard */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		F83BFF8B2195955B36052C85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B961333418B6952104D2D8F /* Pods-GxShareProj.debug.xcconfig */,
+				D366F06392B4E02DEF86C0B5 /* Pods-GxShareProj.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBBCF1932028836600A13EDB /* GxShareProj */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBBCF1C32028836600A13EDB /* Build configuration list for PBXNativeTarget "GxShareProj" */;
+			buildPhases = (
+				B2D4039CECFD9E3EA04B46BE /* [CP] Check Pods Manifest.lock */,
+				CBBCF1902028836600A13EDB /* Sources */,
+				CBBCF1912028836600A13EDB /* Frameworks */,
+				CBBCF1922028836600A13EDB /* Resources */,
+				933C14D325D588C521AF189D /* [CP] Embed Pods Frameworks */,
+				FB7FFA5B433EE844AD65292E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GxShareProj;
+			productName = GxShareProj;
+			productReference = CBBCF1942028836600A13EDB /* GxShareProj.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBBCF1AE2028836600A13EDB /* GxShareProjTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBBCF1C62028836600A13EDB /* Build configuration list for PBXNativeTarget "GxShareProjTests" */;
+			buildPhases = (
+				CBBCF1AB2028836600A13EDB /* Sources */,
+				CBBCF1AC2028836600A13EDB /* Frameworks */,
+				CBBCF1AD2028836600A13EDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBBCF1B12028836600A13EDB /* PBXTargetDependency */,
+			);
+			name = GxShareProjTests;
+			productName = GxShareProjTests;
+			productReference = CBBCF1AF2028836600A13EDB /* GxShareProjTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CBBCF1B92028836600A13EDB /* GxShareProjUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBBCF1C92028836600A13EDB /* Build configuration list for PBXNativeTarget "GxShareProjUITests" */;
+			buildPhases = (
+				CBBCF1B62028836600A13EDB /* Sources */,
+				CBBCF1B72028836600A13EDB /* Frameworks */,
+				CBBCF1B82028836600A13EDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBBCF1BC2028836600A13EDB /* PBXTargetDependency */,
+			);
+			name = GxShareProjUITests;
+			productName = GxShareProjUITests;
+			productReference = CBBCF1BA2028836600A13EDB /* GxShareProjUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBBCF18C2028836600A13EDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Gx;
+				TargetAttributes = {
+					CBBCF1932028836600A13EDB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+						};
+					};
+					CBBCF1AE2028836600A13EDB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CBBCF1932028836600A13EDB;
+					};
+					CBBCF1B92028836600A13EDB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CBBCF1932028836600A13EDB;
+					};
+				};
+			};
+			buildConfigurationList = CBBCF18F2028836600A13EDB /* Build configuration list for PBXProject "GxShareProj" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBBCF18B2028836600A13EDB;
+			productRefGroup = CBBCF1952028836600A13EDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBBCF1932028836600A13EDB /* GxShareProj */,
+				CBBCF1AE2028836600A13EDB /* GxShareProjTests */,
+				CBBCF1B92028836600A13EDB /* GxShareProjUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBBCF1922028836600A13EDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBBCF1A72028836600A13EDB /* LaunchScreen.storyboard in Resources */,
+				CBBCF1A42028836600A13EDB /* Assets.xcassets in Resources */,
+				CBBCF1A22028836600A13EDB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBBCF1AD2028836600A13EDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBBCF1B82028836600A13EDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		933C14D325D588C521AF189D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GxShareProj/Pods-GxShareProj-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2D4039CECFD9E3EA04B46BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GxShareProj-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB7FFA5B433EE844AD65292E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GxShareProj/Pods-GxShareProj-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GxShareProj/Pods-GxShareProj-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBBCF1902028836600A13EDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBBCF19F2028836600A13EDB /* SecondViewController.m in Sources */,
+				CBBCF1992028836600A13EDB /* AppDelegate.m in Sources */,
+				CBBCF1AA2028836600A13EDB /* main.m in Sources */,
+				CBBCF1E12028A16D00A13EDB /* MacroMethod.m in Sources */,
+				CBBCF1E72029D6D200A13EDB /* ShareLoadVC.m in Sources */,
+				CBBCF19C2028836600A13EDB /* FirstViewController.m in Sources */,
+				CBBCF1E22028A16D00A13EDB /* BaseViewController.m in Sources */,
+				CBBCF1D12028917E00A13EDB /* SettingViewController.m in Sources */,
+				CBBCF1EA2029E07500A13EDB /* DirectoryWatcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBBCF1AB2028836600A13EDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBBCF1B42028836600A13EDB /* GxShareProjTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBBCF1B62028836600A13EDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBBCF1BF2028836600A13EDB /* GxShareProjUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBBCF1B12028836600A13EDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBBCF1932028836600A13EDB /* GxShareProj */;
+			targetProxy = CBBCF1B02028836600A13EDB /* PBXContainerItemProxy */;
+		};
+		CBBCF1BC2028836600A13EDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBBCF1932028836600A13EDB /* GxShareProj */;
+			targetProxy = CBBCF1BB2028836600A13EDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBBCF1A02028836600A13EDB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBBCF1A12028836600A13EDB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBBCF1A52028836600A13EDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBBCF1A62028836600A13EDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBBCF1C12028836600A13EDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CBBCF1C22028836600A13EDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBBCF1C42028836600A13EDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B961333418B6952104D2D8F /* Pods-GxShareProj.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GxShareProj/GxShareProj.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BV2GN4J2FA;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GxShareProj/Prefix.pch;
+				INFOPLIST_FILE = GxShareProj/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gx.share.GxShareProj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CBBCF1C52028836600A13EDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D366F06392B4E02DEF86C0B5 /* Pods-GxShareProj.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GxShareProj/GxShareProj.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BV2GN4J2FA;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GxShareProj/Prefix.pch;
+				INFOPLIST_FILE = GxShareProj/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gx.share.GxShareProj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CBBCF1C72028836600A13EDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BV2GN4J2FA;
+				INFOPLIST_FILE = GxShareProjTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gx.share.GxShareProjTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GxShareProj.app/GxShareProj";
+			};
+			name = Debug;
+		};
+		CBBCF1C82028836600A13EDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BV2GN4J2FA;
+				INFOPLIST_FILE = GxShareProjTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gx.share.GxShareProjTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GxShareProj.app/GxShareProj";
+			};
+			name = Release;
+		};
+		CBBCF1CA2028836600A13EDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BV2GN4J2FA;
+				INFOPLIST_FILE = GxShareProjUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gx.share.GxShareProjUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GxShareProj;
+			};
+			name = Debug;
+		};
+		CBBCF1CB2028836600A13EDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BV2GN4J2FA;
+				INFOPLIST_FILE = GxShareProjUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gx.share.GxShareProjUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GxShareProj;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBBCF18F2028836600A13EDB /* Build configuration list for PBXProject "GxShareProj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBBCF1C12028836600A13EDB /* Debug */,
+				CBBCF1C22028836600A13EDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBBCF1C32028836600A13EDB /* Build configuration list for PBXNativeTarget "GxShareProj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBBCF1C42028836600A13EDB /* Debug */,
+				CBBCF1C52028836600A13EDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBBCF1C62028836600A13EDB /* Build configuration list for PBXNativeTarget "GxShareProjTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBBCF1C72028836600A13EDB /* Debug */,
+				CBBCF1C82028836600A13EDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBBCF1C92028836600A13EDB /* Build configuration list for PBXNativeTarget "GxShareProjUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBBCF1CA2028836600A13EDB /* Debug */,
+				CBBCF1CB2028836600A13EDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBBCF18C2028836600A13EDB /* Project object */;
+}
