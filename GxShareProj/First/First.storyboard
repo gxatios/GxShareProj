@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s2c-kx-pmm">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="yOJ-sC-v3h" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PZF-Dl-AIQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qTF-Km-c5a">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qTF-Km-c5a" firstAttribute="leading" secondItem="Ly9-QG-Adz" secondAttribute="leading" id="3Bs-hR-d8x"/>
+                            <constraint firstItem="qTF-Km-c5a" firstAttribute="top" secondItem="Ly9-QG-Adz" secondAttribute="top" id="LAi-wq-s2b"/>
+                            <constraint firstItem="Ly9-QG-Adz" firstAttribute="trailing" secondItem="qTF-Km-c5a" secondAttribute="trailing" id="dcl-Ts-NMy"/>
+                            <constraint firstItem="Ly9-QG-Adz" firstAttribute="bottom" secondItem="qTF-Km-c5a" secondAttribute="bottom" id="t72-f1-U5x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ly9-QG-Adz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Kj-vN-Nd1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="460" y="-179"/>
+        </scene>
+        <!--Add FileVC-->
+        <scene sceneID="CiG-CN-nnl">
+            <objects>
+                <viewController storyboardIdentifier="AddFileVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="e4d-ZA-VzO" customClass="AddFileVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fhH-o1-Obp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总空间:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcK-cF-UGw">
+                                <rect key="frame" x="5" y="629" width="365" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0P6-ns-qfy" userLabel="wifiView">
+                                <rect key="frame" x="0.0" y="220" width="375" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用Wifi导入:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwt-Yy-y1G">
+                                        <rect key="frame" x="136" y="10" width="103.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在电脑浏览器中访问以下地址上传文件:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVH-eH-uv9">
+                                        <rect key="frame" x="64" y="41" width="247" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="pxV-dU-Ywe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tz7-zu-pm7">
+                                        <rect key="frame" x="187" y="76" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="wVH-eH-uv9" firstAttribute="top" secondItem="pwt-Yy-y1G" secondAttribute="bottom" constant="10" id="Awr-Jf-oeu"/>
+                                    <constraint firstAttribute="height" constant="128" id="O3J-uD-4Ko"/>
+                                    <constraint firstItem="wVH-eH-uv9" firstAttribute="centerX" secondItem="0P6-ns-qfy" secondAttribute="centerX" id="OiR-Sa-IUA"/>
+                                    <constraint firstItem="Tz7-zu-pm7" firstAttribute="centerX" secondItem="0P6-ns-qfy" secondAttribute="centerX" id="iob-3b-FF8"/>
+                                    <constraint firstItem="Tz7-zu-pm7" firstAttribute="top" secondItem="wVH-eH-uv9" secondAttribute="bottom" constant="10" id="l2g-pQ-6xc"/>
+                                    <constraint firstItem="pwt-Yy-y1G" firstAttribute="top" secondItem="0P6-ns-qfy" secondAttribute="top" constant="10" id="mAJ-hb-yTA"/>
+                                    <constraint firstItem="pwt-Yy-y1G" firstAttribute="centerX" secondItem="0P6-ns-qfy" secondAttribute="centerX" id="pZM-da-a1l"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nb1-dg-yWS" userLabel="itunesView">
+                                <rect key="frame" x="0.0" y="40" width="375" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用itunes导入:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qL1-3p-T6H">
+                                        <rect key="frame" x="127.5" y="10" width="120.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="1，将iPhone/iPad与电脑连接，打开iTunes后点击你的设备。2,在左侧功能列表选择应用，在右侧&quot;文件共享&quot;区域中选中当前app。3，点击右下角“添加文件”按钮，选择文件即可共享到iPhone/iPad。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4ul-Gn-C0V">
+                                        <rect key="frame" x="20" y="34" width="335" height="120"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="dO4-Od-L6b"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="qL1-3p-T6H" firstAttribute="centerX" secondItem="nb1-dg-yWS" secondAttribute="centerX" id="JQO-wH-ggk"/>
+                                    <constraint firstAttribute="trailing" secondItem="4ul-Gn-C0V" secondAttribute="trailing" constant="20" id="PFs-TG-MBx"/>
+                                    <constraint firstItem="qL1-3p-T6H" firstAttribute="top" secondItem="nb1-dg-yWS" secondAttribute="top" constant="10" id="RoJ-nr-XeW"/>
+                                    <constraint firstItem="4ul-Gn-C0V" firstAttribute="leading" secondItem="nb1-dg-yWS" secondAttribute="leading" constant="20" id="c3D-YM-k0M"/>
+                                    <constraint firstItem="4ul-Gn-C0V" firstAttribute="top" secondItem="qL1-3p-T6H" secondAttribute="bottom" constant="3" id="tQl-L6-Gfb"/>
+                                    <constraint firstAttribute="height" constant="150" id="zuG-Hf-fTJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nb1-dg-yWS" firstAttribute="top" secondItem="gcc-ry-kgX" secondAttribute="top" constant="20" id="0Ka-Gf-aa1"/>
+                            <constraint firstItem="vcK-cF-UGw" firstAttribute="leading" secondItem="gcc-ry-kgX" secondAttribute="leading" constant="5" id="3GN-Ai-5YE"/>
+                            <constraint firstItem="0P6-ns-qfy" firstAttribute="leading" secondItem="gcc-ry-kgX" secondAttribute="leading" id="ItM-eH-Cd6"/>
+                            <constraint firstItem="gcc-ry-kgX" firstAttribute="bottom" secondItem="vcK-cF-UGw" secondAttribute="bottom" constant="20" id="JWD-nM-6bZ"/>
+                            <constraint firstItem="0P6-ns-qfy" firstAttribute="top" secondItem="nb1-dg-yWS" secondAttribute="bottom" constant="30" id="Oxl-Ah-aah"/>
+                            <constraint firstItem="gcc-ry-kgX" firstAttribute="trailing" secondItem="nb1-dg-yWS" secondAttribute="trailing" id="WyX-Cv-Mbm"/>
+                            <constraint firstItem="nb1-dg-yWS" firstAttribute="leading" secondItem="gcc-ry-kgX" secondAttribute="leading" id="uAe-DS-T22"/>
+                            <constraint firstItem="gcc-ry-kgX" firstAttribute="trailing" secondItem="vcK-cF-UGw" secondAttribute="trailing" constant="5" id="xqb-7z-Rwo"/>
+                            <constraint firstItem="gcc-ry-kgX" firstAttribute="trailing" secondItem="0P6-ns-qfy" secondAttribute="trailing" id="y9O-jX-N50"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gcc-ry-kgX"/>
+                    </view>
+                    <connections>
+                        <outlet property="itunesTextV" destination="4ul-Gn-C0V" id="dBP-sW-2rn"/>
+                        <outlet property="volLabel" destination="vcK-cF-UGw" id="U1o-UZ-cq6"/>
+                        <outlet property="wifiIntroLabel" destination="wVH-eH-uv9" id="LOo-hu-XTC"/>
+                        <outlet property="wifiLabel" destination="Tz7-zu-pm7" id="1Se-6c-Agp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vmb-K2-zEj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1125.5999999999999" y="-166.8665667166417"/>
+        </scene>
+    </scenes>
+</document>

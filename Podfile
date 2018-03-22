@@ -17,5 +17,6 @@ pod 'NullSafe'
 #pod 'RTLabel'
 #pod 'Reachability'
 pod 'UMengAnalytics-NO-IDFA' #//无IDFA版SDK
-
+pod 'GCDWebServer'
+pod 'GCDWebServer/WebUploader', '~> 3.0'
 end

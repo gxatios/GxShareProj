@@ -17,6 +17,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    BOOL isFirstLaunch = [[NSUserDefaults standardUserDefaults] boolForKey:@"isFirstLaunch"];
+    if (isFirstLaunch == YES) {
+    }else{
+        [self bundleToDocuments:@"简介.rtf" existsCover:YES];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"isFirstLaunch"];
+    }
+    
+    
+    
     return YES;
 }
 
@@ -46,6 +56,30 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
+// 复制nsbundle文件到document
+- (void)bundleToDocuments:(NSString *)fileName existsCover:(BOOL)cover
+{
+    BOOL success;
+    NSError *error;
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];//找到 Documents 目录
+    NSString *targetPath = [documentsDirectory stringByAppendingPathComponent:fileName];
+    if(!cover)
+    {
+        success = [fileManager fileExistsAtPath:targetPath];
+        if (success) return;
+    }else{
+        [fileManager removeItemAtPath:targetPath error:&error];
+    }
+    //把 xxx.app 包里的文件拷贝到 targetPath
+    NSString *bundlePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:fileName];
+    //如果文件存在了则不能覆盖，所以前面才要先把它删除掉
+    success = [fileManager copyItemAtPath:bundlePath toPath:targetPath error:&error];
+    if(!success)
+        NSLog(@"'%@' 文件从 app 包里拷贝到 Documents 目录，失败:%@", fileName, error);
+    else
+        NSLog(@"'%@' 文件从 app 包里已经成功拷贝到了 Documents 目录。", fileName);
+}
 
 @end

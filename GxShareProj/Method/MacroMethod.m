@@ -289,13 +289,14 @@
 }
 
 + (UIBarButtonItem *)barButtonItemTarget:(id)target action:(SEL)action{
-    UIView *itemView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 70, 45)];
+    UIView *itemView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 60, 45)];
     //    itemView.backgroundColor = [UIColor purpleColor];
-    UILabel *showLable = [[UILabel alloc] initWithFrame:CGRectMake(0, 10, 70, 21)];
+    UILabel *showLable = [[UILabel alloc] initWithFrame:CGRectMake(0, 10, 50, 21)];
     showLable.text = @"添加";
+    showLable.font = [UIFont systemFontOfSize:14.0f];
     [itemView addSubview:showLable];
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    backBtn.frame = CGRectMake(0, 0, 70, 45);
+    backBtn.frame = CGRectMake(0, 0, 60, 45);
 //    [backBtn setImage:[UIImage imageNamed:@"返回"] forState:UIControlStateNormal];
     [backBtn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     [itemView addSubview:backBtn];
@@ -308,8 +309,8 @@
     [backBtn setExclusiveTouch:YES];
     return temporaryBarButtonItem;
 }
-+ (UIColor *) colorWithHexString: (NSString *) stringToConvert
-{
+
++ (UIColor *) colorWithHexString: (NSString *) stringToConvert{
     NSString *cString = [[stringToConvert stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
     
     // String should be 6 or 8 characters

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AboutVC-->
+        <scene sceneID="bTD-tC-khL">
+            <objects>
+                <viewController storyboardIdentifier="AboutVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HsG-4l-oP1" customClass="AboutVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kdl-Bl-weo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9Iq-0j-UYV">
+                                <rect key="frame" x="20" y="40" width="335" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="vvB-ZJ-3Fl"/>
+                                </constraints>
+                                <color key="textColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9Iq-0j-UYV" firstAttribute="top" secondItem="QXy-KR-PQ8" secondAttribute="top" constant="20" id="C6t-AC-CdK"/>
+                            <constraint firstItem="9Iq-0j-UYV" firstAttribute="leading" secondItem="QXy-KR-PQ8" secondAttribute="leading" constant="20" id="hlL-SL-0kP"/>
+                            <constraint firstItem="QXy-KR-PQ8" firstAttribute="trailing" secondItem="9Iq-0j-UYV" secondAttribute="trailing" constant="20" id="zw5-Kz-6GZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QXy-KR-PQ8"/>
+                    </view>
+                    <connections>
+                        <outlet property="showTextV" destination="9Iq-0j-UYV" id="NEY-TH-pdI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lvt-eo-db9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39" y="-188"/>
+        </scene>
+        <!--App IntroVC-->
+        <scene sceneID="007-0q-afy">
+            <objects>
+                <viewController storyboardIdentifier="AppIntroVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="518-SX-Cmb" customClass="AppIntroVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Elu-Vz-afS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用介绍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdo-hS-Jma">
+                                <rect key="frame" x="15" y="50" width="80" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="D3c-Ts-wln"/>
+                                    <constraint firstAttribute="height" constant="21" id="xkJ-SN-6Ac"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IKA-Ne-BfN">
+                                <rect key="frame" x="15" y="76" width="345" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="tvT-NH-pNX"/>
+                                </constraints>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JCU-sQ-KLI" firstAttribute="trailing" secondItem="IKA-Ne-BfN" secondAttribute="trailing" constant="15" id="KQD-vF-H6A"/>
+                            <constraint firstItem="Jdo-hS-Jma" firstAttribute="leading" secondItem="JCU-sQ-KLI" secondAttribute="leading" constant="15" id="apJ-kf-2DC"/>
+                            <constraint firstItem="IKA-Ne-BfN" firstAttribute="leading" secondItem="Jdo-hS-Jma" secondAttribute="leading" id="jIF-NZ-WGD"/>
+                            <constraint firstItem="Jdo-hS-Jma" firstAttribute="top" secondItem="JCU-sQ-KLI" secondAttribute="top" constant="30" id="kI2-dA-5dP"/>
+                            <constraint firstItem="IKA-Ne-BfN" firstAttribute="top" secondItem="Jdo-hS-Jma" secondAttribute="bottom" constant="5" id="uUP-10-GZ7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JCU-sQ-KLI"/>
+                    </view>
+                    <connections>
+                        <outlet property="introTextV" destination="IKA-Ne-BfN" id="wcz-aM-MDK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hso-r3-fYP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="698" y="-188"/>
+        </scene>
+    </scenes>
+</document>
